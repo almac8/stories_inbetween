@@ -2,6 +2,7 @@ import Landing from "./Landing/Landing";
 import Vision from "./Vision/Vision";
 import Introduction from "./Introduction/Introduction";
 import Values from "./Values/Values";
+import Sponsors from "./Sponsors/Sponsors";
 
 const HomePage = () => (
   <div>
@@ -9,7 +10,7 @@ const HomePage = () => (
     <Vision />
     <Introduction />
     <Values />
-    <h1>Sponsors</h1>
+    <Sponsors />
     <h1>Blog</h1>
     <h1>Donations</h1>
     <h1>Footer</h1>
