@@ -1,6 +1,8 @@
+import Landing from "./Landing/Landing";
+
 const HomePage = () => (
   <div>
-    <h1>Landing</h1>
+    <Landing />
     <h1>Vision</h1>
     <h1>Introduction</h1>
     <h1>Values</h1>
