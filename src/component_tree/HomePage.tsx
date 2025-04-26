@@ -1,13 +1,14 @@
-import Introduction from "./Introduction/Introduction";
 import Landing from "./Landing/Landing";
 import Vision from "./Vision/Vision";
+import Introduction from "./Introduction/Introduction";
+import Values from "./Values/Values";
 
 const HomePage = () => (
   <div>
     <Landing />
     <Vision />
     <Introduction />
-    <h1>Values</h1>
+    <Values />
     <h1>Sponsors</h1>
     <h1>Blog</h1>
     <h1>Donations</h1>
