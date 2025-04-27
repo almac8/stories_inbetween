@@ -1,0 +1,21 @@
+#Vision {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Vision > p {
+  max-width: 64rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  #Vision > p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+  }
+}
