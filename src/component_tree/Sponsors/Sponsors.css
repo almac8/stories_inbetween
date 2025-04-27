@@ -1,4 +1,4 @@
-#Values {
+#Sponsors {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.values_box {
+.sponsors_box {
   width: 64%;
   display: flex;
   flex-flow: wrap row;
@@ -15,8 +15,8 @@
   align-items: center;
 }
 
-.value_box {
-  background-color: purple;
+.sponsor_box {
+  background-color: red;
   width: 16rem;
   height: 16rem;
   margin-left: 4rem;
@@ -24,21 +24,24 @@
   padding: 2rem;
   display: flex;
   flex-flow: nowrap column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 @media screen and (max-width: 850px) {
-  #Values {
+  #Sponsors {
     height: auto;
   }
-
-  .values_box {
-    width: 100%;
+  
+  .sponsors_box {
+    display: flex;
+    flex-flow: nowrap column;
   }
 
-  .value_box {
+  .sponsor_box {
+    width: 16rem;
+    height: 16rem;
     margin: 1rem;
   }
 }
