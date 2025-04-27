@@ -1,0 +1,28 @@
+#Footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer_text {
+  max-width: 850px;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  flex-flow: nowrap row;
+}
+
+.socials > p {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .footer_text {
+    margin: 2rem;
+  }
+}
