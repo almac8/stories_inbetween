@@ -1,0 +1,9 @@
+#landing-page {
+  background-color: #49C500;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}

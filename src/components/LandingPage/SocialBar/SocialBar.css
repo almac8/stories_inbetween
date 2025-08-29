@@ -1,0 +1,7 @@
+#social-bar {
+  background-color: #FF5600;
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-evenly;
+}

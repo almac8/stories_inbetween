@@ -1,0 +1,11 @@
+#youtube {
+  background-color: #E14F00;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#blog p {
+  width: 80%;
+}
