@@ -4,7 +4,7 @@
   font-weight: 400;
   
   color: rgba(0, 0, 0, 0.87);
-  background-color: #FFAD81;
+  background-color: #9F0086;
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -57,6 +57,7 @@ h3 {
 p {
   margin: 0;
   padding: 0;
+  font-size: 1.1em;
 }
 
   /* 
