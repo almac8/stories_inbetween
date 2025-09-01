@@ -1,5 +1,5 @@
 #peacewalk {
-  margin-top: 4rem;
+  margin: 4rem auto;
   display: flex;
   flex-flow: nowrap column;
   align-items: center;

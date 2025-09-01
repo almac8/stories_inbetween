@@ -11,3 +11,10 @@
   width: 80%;
   transform: skew(0deg, -8deg);
 }
+
+@media screen and (min-width: 480px) {
+  #introduction {
+    padding: 8rem;
+    text-align: center;
+  }
+}

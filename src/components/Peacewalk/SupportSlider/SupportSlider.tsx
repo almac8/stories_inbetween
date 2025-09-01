@@ -14,29 +14,48 @@ const SupportSlider = () => {
     location: 'Also South Africa',
     image_source: 'https://images2.imgbox.com/85/f3/SKZmawOp_o.jpg',
     link: "Website url"
+  }, {
+    name: 'Supporter 3',
+    location: 'Again.. South Africa',
+    image_source: 'https://images2.imgbox.com/85/f3/SKZmawOp_o.jpg',
+    link: "Website url"
   }]
   
   return (
     <div id="support-slider">
-      <button onClick={() => setCurrentlyDisplayedSupporter(getCurrentlyDisplayedSupporter > 0 ? getCurrentlyDisplayedSupporter - 1 : supporters.length - 1) }>
-        { '<' }
-      </button>
+      <div id='decorative_top_triangle' />
 
-      {supporters.map((supporter, index) => (
-        <div
-        key={'supporter_' + index}
-        className={ index == getCurrentlyDisplayedSupporter ? 'open' : 'closed' }
-        style={ { backgroundImage: `url(${supporter.image_source})` } }
-        >
-          <p>{ supporter.name }</p>
-          <p>{ supporter.location }</p>
-          <a href={ supporter.link }>Website</a>
+      <div id='interior'>
+        <button
+        id='previous_button'
+        onClick={() => setCurrentlyDisplayedSupporter(getCurrentlyDisplayedSupporter > 0 ? getCurrentlyDisplayedSupporter - 1 : supporters.length - 1) }>
+          { '<' }
+        </button>
+
+        <div id='supporter_view'>
+          {supporters.map((supporter, index) => (
+            <div
+            key={'supporter_' + index}
+            className={ index == getCurrentlyDisplayedSupporter ? 'open' : 'closed' }
+            style={ { backgroundImage: `url(${supporter.image_source})` } }
+            >
+              <div id='supporter_information'>
+                <p>{ supporter.name }</p>
+                <p>{ supporter.location }</p>
+                <a href={ supporter.link }>Website</a>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
 
-      <button onClick={() => setCurrentlyDisplayedSupporter(getCurrentlyDisplayedSupporter < supporters.length - 1 ? getCurrentlyDisplayedSupporter + 1 : 0) }>
-        { '>' }
-      </button>
+        <button
+        id='next_button'
+        onClick={() => setCurrentlyDisplayedSupporter(getCurrentlyDisplayedSupporter < supporters.length - 1 ? getCurrentlyDisplayedSupporter + 1 : 0) }>
+          { '>' }
+        </button>
+      </div>
+
+      <div id='decorative_bottom_triangle' />
     </div>
   )
 }
