@@ -1,4 +1,4 @@
-import StarText from '../StarText/StarText'
+import StarText from '../../StarText/StarText'
 import './YouTube.css'
 
 const YouTube = () => (

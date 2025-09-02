@@ -1,0 +1,11 @@
+#blog_and_vlog {
+  background-color: red;
+  display: flex;
+  flex-flow: nowrap column;
+}
+
+@media screen and (min-width: 480px) {
+  #blog_and_vlog {
+    flex-flow: nowrap row;
+  }
+}

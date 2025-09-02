@@ -1,6 +1,6 @@
 import './Blog.css'
 
-import StarText from '../StarText/StarText'
+import StarText from '../../StarText/StarText'
 
 const Blog = () => (
   <div id='blog'>
