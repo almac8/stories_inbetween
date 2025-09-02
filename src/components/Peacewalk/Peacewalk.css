@@ -1,6 +1,13 @@
 #peacewalk {
-  margin: 4rem auto;
+  width: 100%;
+  margin-top: 4rem;
   display: flex;
   flex-flow: nowrap column;
   align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  #peacewalk {
+    margin-top: 12rem;
+  }
 }

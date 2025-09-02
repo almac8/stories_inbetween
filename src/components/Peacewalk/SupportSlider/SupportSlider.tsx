@@ -1,61 +1,28 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './SupportSlider.css'
 
 const SupportSlider = () => {
-  let [getCurrentlyDisplayedSupporter, setCurrentlyDisplayedSupporter] = useState(0)
+  let supporterData = [ 'one', 'two', 'three', 'four' ]
+  let [ supporterIndex, setSupporterIndex ] = useState(0)
 
-  const supporters = [{
-    name: 'Supporter 1',
-    location: 'South Africa',
-    image_source: 'https://images2.imgbox.com/85/f3/SKZmawOp_o.jpg',
-    link: "Website url"
-  }, {
-    name: 'Supporter 2',
-    location: 'Also South Africa',
-    image_source: 'https://images2.imgbox.com/85/f3/SKZmawOp_o.jpg',
-    link: "Website url"
-  }, {
-    name: 'Supporter 3',
-    location: 'Again.. South Africa',
-    image_source: 'https://images2.imgbox.com/85/f3/SKZmawOp_o.jpg',
-    link: "Website url"
-  }]
-  
+  useEffect(() => {
+    if(supporterIndex < 0) { setSupporterIndex(supporterData.length - 1) }
+    if(supporterIndex >= supporterData.length) { setSupporterIndex(0) }
+  }, [ supporterIndex ])
+
   return (
-    <div id="support-slider">
-      <div id='decorative_top_triangle' />
+    <div id="support_slider">
+      <button onClick={ () => setSupporterIndex(supporterIndex - 1) } id='left_arrow_border'>
+        <div id='left_arrow'></div>
+      </button>
 
-      <div id='interior'>
-        <button
-        id='previous_button'
-        onClick={() => setCurrentlyDisplayedSupporter(getCurrentlyDisplayedSupporter > 0 ? getCurrentlyDisplayedSupporter - 1 : supporters.length - 1) }>
-          { '<' }
-        </button>
-
-        <div id='supporter_view'>
-          {supporters.map((supporter, index) => (
-            <div
-            key={'supporter_' + index}
-            className={ index == getCurrentlyDisplayedSupporter ? 'open' : 'closed' }
-            style={ { backgroundImage: `url(${supporter.image_source})` } }
-            >
-              <div id='supporter_information'>
-                <p>{ supporter.name }</p>
-                <p>{ supporter.location }</p>
-                <a href={ supporter.link }>Website</a>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <button
-        id='next_button'
-        onClick={() => setCurrentlyDisplayedSupporter(getCurrentlyDisplayedSupporter < supporters.length - 1 ? getCurrentlyDisplayedSupporter + 1 : 0) }>
-          { '>' }
-        </button>
+      <div id='image_border'>
+        <div id='image'>{ supporterIndex }</div>
       </div>
 
-      <div id='decorative_bottom_triangle' />
+      <button onClick={ () => setSupporterIndex(supporterIndex + 1) } id='right_arrow_border'>
+        <div id='right_arrow'></div>
+      </button>
     </div>
   )
 }
