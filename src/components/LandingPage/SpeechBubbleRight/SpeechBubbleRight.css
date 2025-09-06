@@ -1,0 +1,39 @@
+#speech_bubble_right_border {
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: center;
+
+  clip-path: polygon(
+    77% 15%,
+    95% 15%,
+    98% 85%,
+    12% 88%,
+    3% 23%,
+    50% 20%,
+    79% 0%
+  );
+}
+
+#speech_bubble_right {
+  background-color: red;
+  padding: 4rem;
+  clip-path: polygon(
+    72% 21%,
+    93% 19%,
+    95% 80%,
+    15% 85%,
+    6% 27%,
+    52% 23%,
+    77% 3%
+  );
+  text-align: center; 
+}
+
+@media screen and (min-width: 480px) {
+  #speech_bubble_right {
+    padding: 8rem;
+  }
+}
