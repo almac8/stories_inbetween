@@ -3,7 +3,7 @@ import StarText from '../StarText/StarText'
 
 const Network = () => (
   <div id="network">
-    <StarText text="Network" />
+    <StarText text="Networking and Collaborations" />
     
     <p>
       Everywhere our journey takes us, we end up meeting people doing really amazing things
