@@ -1,11 +1,11 @@
 #network {
-  background-color: #E14F00;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: nowrap column;
   align-items: center;
-  padding: 2rem 0;
+  text-align: center;
 }
 
 #network p {
   width: 80%;
+  max-width: 64rem;
 }

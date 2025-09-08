@@ -1,15 +1,18 @@
 #donations {
+  background-color: #E14F00;
   width: 100%;
   display: flex;
   flex-flow: nowrap column;
   align-items: center;
+  margin-top: 8rem;
+  padding: 2rem 0;
 }
 
 #description {
   width: 80%;
   text-align: center;
   margin: 1rem 0;
-  max-width: 40rem;
+  max-width: 64rem;
 }
 
 #details {

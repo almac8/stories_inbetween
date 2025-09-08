@@ -18,7 +18,7 @@
 }
 
 #speech_bubble_left {
-  background-color: red;
+  background-color: #E14F00;
   padding: 4rem;
   clip-path: polygon(9% 16%, 93% 19%, 95% 80%, 76% 80%, 75% 100%, 60% 79%, 7% 76%);
   text-align: center;

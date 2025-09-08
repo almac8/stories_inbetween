@@ -1,13 +1,12 @@
 import './Network.css'
-import StarText from '../StarText/StarText'
 
 const Network = () => (
   <div id="network">
-    <StarText text="Networking and Collaborations" />
-    
     <p>
-      Everywhere our journey takes us, we end up meeting people doing really amazing things
-      We would love to link these people up with each other.
+      Our grand vision is to create a database of people doing amazing things in their communities
+      and then link them up with each other so that they can inspire and support each other.
+      Along the way, we’re connecting people who care; people with ideas, tools, time, or just a willingness to listen and help.
+      We weren’t meant to figure things out alone, and honestly, it’s way more fun together.
     </p>
   </div>
 )
