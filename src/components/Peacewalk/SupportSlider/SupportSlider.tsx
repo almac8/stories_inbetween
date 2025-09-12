@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import './SupportSlider.css'
 
-const SupportSlider = () => {
-  let supporterData = [ 'one', 'two', 'three', 'four' ]
+const SupportSlider = ({ supporterData }: { supporterData: Array<Object> }) => {
   let [ supporterIndex, setSupporterIndex ] = useState(0)
 
   useEffect(() => {
@@ -17,7 +16,13 @@ const SupportSlider = () => {
       </button>
 
       <div id='image_border'>
-        <div id='image'>{ supporterIndex }</div>
+        <div id='image'>
+          <div className='supporter_title'>
+            <p>Name</p>
+            <p>Area</p>
+            <p>Website</p>
+          </div>
+        </div>
       </div>
 
       <button onClick={ () => setSupporterIndex(supporterIndex + 1) } id='right_arrow_border'>
