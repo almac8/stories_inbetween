@@ -1,5 +1,7 @@
+import './ContactUsSection.css'
+
 const ContactUsSection = () => (
-  <section>
+  <form id="contact_us_section">
     <p>Name</p>
     <input type="text" />
 
@@ -10,6 +12,7 @@ const ContactUsSection = () => (
     <textarea></textarea>
 
     <button type="submit">Send</button>
-  </section>
+  </form>
 )
+
 export default ContactUsSection
