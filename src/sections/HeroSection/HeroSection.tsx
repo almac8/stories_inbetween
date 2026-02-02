@@ -6,7 +6,7 @@ const HeroSection = () => (
   <section id="hero_section">
     <Header />
 
-    <h1>DO SOMETHING</h1>
+    <p>DO SOMETHING</p>
     <h1>Stories in Between</h1>
   </section>
 )
