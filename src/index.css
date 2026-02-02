@@ -26,6 +26,11 @@ body {
   align-items: center;
 }
 
+h1, h2, h3, h4, h5, h6, input, textarea, button, ul, li, section, p {
+  margin: 0;
+  padding: 0;
+}
+
 //  400px for mobile
 //  800px for tablets or small laptops
 //  1200px for desktops
