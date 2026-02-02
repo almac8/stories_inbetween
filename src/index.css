@@ -25,3 +25,8 @@ body {
   flex-flow: nowrap column;
   align-items: center;
 }
+
+//  400px for mobile
+//  800px for tablets or small laptops
+//  1200px for desktops
+//  1600px for large displays
