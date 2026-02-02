@@ -1,0 +1,71 @@
+#who_we_are_section{
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+
+#profile_image{
+  background-color: #e0a8ff88;
+  width: 250px;
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+  border: 4px solid #FF7800;
+}
+
+#fire_image{
+  width: 100%;
+}
+
+#map_image{
+  width: 100%;
+}
+
+#kitchen_image{
+  width: 100%;
+}
+
+#talk_1_image{
+  width: 100%;
+}
+
+#talk_2_image{
+  width: 100%;
+}
+
+p {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  p {
+    max-width: 700px;
+  }
+
+  #map_image{
+    max-width: 750px;
+    border-radius: 2rem;
+    border: 4px solid #FF7800;
+  }
+  
+  #kitchen_image{
+    max-width: 750px;
+    border-radius: 2rem;
+    border: 4px solid #FF7800;
+  }
+
+  #talk_1_image{
+    max-width: 750px;
+    border-radius: 2rem;
+    border: 4px solid #FF7800;
+  }
+
+  #talk_2_image{
+    max-width: 750px;
+    border-radius: 2rem;
+    border: 4px solid #FF7800;
+  }
+}

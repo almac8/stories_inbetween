@@ -1,0 +1,43 @@
+#contact_us_section {
+  background-color: #48006fff;
+  width: 100%;
+
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+
+  padding: 2rem 0;
+}
+
+#contact_us_section input {
+  width: 100%;
+  max-width: 350px;
+  height: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+#contact_us_section textarea {
+  width: 100%;
+  max-width: 350px;
+
+  height: 200px;
+
+  margin-bottom: 2rem;
+}
+
+#contact_us_section button {
+  background-color: #ff7800ff;
+
+  font-weight: 900;
+
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  border: 4px solid #ccd700ff;
+
+  cursor: pointer;
+}
+
+#contact_us_section p {
+  color: #ff7800ff;
+}
