@@ -8,6 +8,7 @@
   flex-flow: nowrap column;
   align-items: center;
   gap: 1rem;
+  overflow: hidden;
   
   background-color: #cf78ffff;
 }
@@ -25,7 +26,6 @@
 
 #header .closed {
   height: 0;
-  overflow: hidden;
   padding: 0;
 
   transition: 0.4s;
