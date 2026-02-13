@@ -12,6 +12,10 @@ const ContactUsSection = () => (
     <textarea></textarea>
 
     <button type="submit">Send</button>
+
+    <br />
+    <p>Stories in Between</p>
+    <p>Registered Non-profit: K2026068265</p>
   </form>
 )
 
