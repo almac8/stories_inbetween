@@ -1,0 +1,39 @@
+#Donation {
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.open_donation {
+  background-color: #cf78ffff;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.closed_donation {
+  background-color: transparent;
+
+  width: 0;
+  height: 0;
+}
+
+#Donation button {
+  background-color: #ff7800ff;
+
+  font-weight: 900;
+
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  border: 4px solid #ccd700ff;
+
+  cursor: pointer;
+}
