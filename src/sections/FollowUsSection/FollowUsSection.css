@@ -2,10 +2,13 @@
   width: 100%;
 
   display: flex;
-  flex-flow: nowrap column;
+  flex-flow: wrap row;
   align-items: center;
+  justify-content: space-evenly;
 
   margin-top: 4rem;
+
+  list-style-type: none;
 }
 
 #follow_us_section img {
