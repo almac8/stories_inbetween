@@ -7,14 +7,17 @@
 
 #bicycles_image {
   width: 100%;
+  margin: 1rem 0;
 }
 
 #pyramid_image {
   width: 100%;
+  margin: 1rem 0;
 }
 
 p {
   text-align: center;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 800px) {

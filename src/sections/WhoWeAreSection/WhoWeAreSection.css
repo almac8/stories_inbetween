@@ -14,30 +14,42 @@
 
   border-radius: 50%;
   border: 4px solid #FF7800;
+
+  margin-top: 2rem;
 }
 
 #fire_image{
   width: 100%;
+  margin: 1rem 0;
 }
 
 #map_image{
   width: 100%;
+  margin: 1rem 0;
 }
 
 #kitchen_image{
   width: 100%;
+  margin: 1rem 0;
 }
 
 #talk_1_image{
   width: 100%;
+  margin: 1rem 0;
 }
 
 #talk_2_image{
   width: 100%;
+  margin: 1rem 0;
 }
 
 p {
   text-align: center;
+  margin: 1rem;
+}
+
+#who_we_are_section > h2 {
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 800px) {
