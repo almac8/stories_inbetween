@@ -1,6 +1,7 @@
 #header {
   background-color: #48006fff;
   width: 100%;
+  position: fixed;
 }
 
 #header nav {

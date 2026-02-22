@@ -14,7 +14,7 @@
   display: flex;
   flex-flow: nowrap column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #hero_section #title {

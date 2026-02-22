@@ -2,6 +2,7 @@ import './Header.css'
 
 import hamburger from '../../assets/hamburger.svg'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [ nav_is_open, set_nav_is_open ] = useState(false)
@@ -11,10 +12,11 @@ const Header = () => {
       <img src={ hamburger } alt="Menu" onClick={() => set_nav_is_open(!nav_is_open)} />
 
       <nav className={ nav_is_open ? 'open' : 'closed' }>
-        <a href="#who_we_are_section">Who We Are</a>
-        <a href="#what_we_do_section">What We Do</a>
-        <a href="#follow_us_section">Follow Us</a>
-        <a href="#contact_us_section">Contact Us</a>
+        <Link to={ "/"}>Home</Link>
+        <Link to={ "who_we_are"}>Who We Are</Link>
+        <Link to={ "what_we_do"}>What We Do</Link>
+        <Link to={ "follow_us"}>Follow Us</Link>
+        <Link to={ "support_us"}>Support Us</Link>
       </nav>
     </header>
   )
