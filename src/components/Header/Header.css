@@ -15,8 +15,10 @@
 }
 
 #header img {
-  margin: 1rem;
+  margin: 0.6rem;
   cursor: pointer;
+  max-width: 2rem;
+  max-height: 2rem;
 }
 
 #header .open {

@@ -12,11 +12,11 @@ const Header = () => {
       <img src={ hamburger } alt="Menu" onClick={() => set_nav_is_open(!nav_is_open)} />
 
       <nav className={ nav_is_open ? 'open' : 'closed' }>
-        <Link to={ "/"}>Home</Link>
-        <Link to={ "who_we_are"}>Who We Are</Link>
-        <Link to={ "what_we_do"}>What We Do</Link>
-        <Link to={ "follow_us"}>Follow Us</Link>
-        <Link to={ "support_us"}>Support Us</Link>
+        <Link to={ "/"} onClick={ () => set_nav_is_open(false) }>Home</Link>
+        <Link to={ "who_we_are"} onClick={ () => set_nav_is_open(false) }>Who We Are</Link>
+        <Link to={ "what_we_do"} onClick={ () => set_nav_is_open(false) }>What We Do</Link>
+        <Link to={ "contact_us"} onClick={ () => set_nav_is_open(false) }>Contact Us</Link>
+        <Link to={ "support_us"} onClick={ () => set_nav_is_open(false) }>Support Us</Link>
       </nav>
     </header>
   )

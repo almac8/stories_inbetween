@@ -7,6 +7,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import HomePage from './pages/HomePage/HomePage'
 import Header from './components/Header/Header'
+import WhoWeArePage from './pages/WhoWeArePage/WhoWeArePage'
+import WhatWeDoPage from './pages/WhatWeDoPage/WhatWeDoPage'
+import ContactUsPage from './pages/ContactUsPage/ContactUsPage'
+import SupportUsPage from './pages/SupportUsPage/SupportUsPage'
 
 createRoot(document.getElementById('main_layout')!).render(
   <StrictMode>
@@ -15,10 +19,10 @@ createRoot(document.getElementById('main_layout')!).render(
 
       <Routes>
         <Route path="/" element={ <HomePage /> } />
-        <Route path="/who_we_are" element={ <h1>Who we are</h1> } />
-        <Route path="/what_we_do" element={ <h1>What we do</h1> } />
-        <Route path="/follow_us" element={ <h1>Follow us</h1> } />
-        <Route path="/support_us" element={ <h1>Support us</h1> } />
+        <Route path="/who_we_are" element={ <WhoWeArePage /> } />
+        <Route path="/what_we_do" element={ <WhatWeDoPage /> } />
+        <Route path="/contact_us" element={ <ContactUsPage /> } />
+        <Route path="/support_us" element={ <SupportUsPage /> } />
       </Routes>
     </BrowserRouter>
   </StrictMode>
